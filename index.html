@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <form>
+        <p>
+            <label>Customer Name</label>
+            <input type="text" name="customer_name">
+            <!-- you can also use id = 'name'-->
+        </p>
+
+        <p>
+            <label> What coffee would you like to order?</label> <br>
+            <input type="radio" name="coffee_type" value="turkish"> Turkish Coffee <br>
+            <input type="radio" name="coffee_type" value="american"> American Coffee <br>
+            <input type="radio" name="coffee_type" value="iced_latte"> Iced latte
+        </p>
+
+        <p>
+            <label>Do you need any extras?</label> <br>
+            <input type="checkbox" name="extras" value="extra-coffee"> Extra Coffee <br>
+            <input type="checkbox" name="extras" value="whipped_cream"> Whipped Cream <br>
+            <input type="checkbox" name="extras" value="extra_caramel"> Extra Caramel
+
+
+        </p>
+
+    <button type="button" id="orderButton">Place order</button>
+
+    </form>
+
+    <div id="summary"></div>
+
+
+</body>
+
+</html>
